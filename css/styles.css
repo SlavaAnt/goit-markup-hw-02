@@ -1,0 +1,36 @@
+:root{
+/* Fonts */
+
+/* Textcolors */
+/* Головна */
+    --color: #212121;
+    --color: #757575;
+    --color: #FFFFFF;
+    --color: #2196F3;
+    --color: #000000;
+    --color: #2F303A;
+    --color: #FFFFFF 60%;
+    --color: #ECECEC;
+    --color: #F5F4FA;
+
+/* Портфоліо */
+    --color: #212121;
+    --color: #757575;
+    --color: #FFFFFF;
+    --color: #EEEEEE;
+    --color: #2196F3;
+    --color: #F5F4FA;
+    --color: #000000;
+    --color: #FFFFFF 60%;
+    --color: #2F303A;
+    --color: #ECECEC;
+
+/* Background colors*/
+
+/* Others */
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
