@@ -12,23 +12,23 @@
     --t-logo-black-color: #000000;
     --t-gray-color: rgba(255, 255, 255, 0.6);
 
+/* Background colors*/
+    --bgd-primary-color: #F5F5F5;
+    --bgd-secondary-color: #2F303A;
+    --bgd-cinereous-color: #F5F4FA;
+    --bgd-light-color: #FFFFFF;
+}
 /* Наявні кольори на сторінці "Студіо" */
     /*--color: #2F303A;
     /*--color: #FFFFFF 60%;
     /*--color: #ECECEC;
-    /*--color: #F5F4FA;
 
 /* Наявні кольори на сторінці "Портфоліо" */
     /*--color: #EEEEEE;
-    /*--color: #F5F4FA;
     /*--color: #FFFFFF 60%;
     /*--color: #2F303A;
-    /*--color: #ECECEC;
+    /*--color: #ECECEC; */
 
-/* Background colors*/
-    --bgd-primary-color: #F5F5F5;
-    --bgd-secondary-color: #2F303A;
-}
 
 body {
     font-family: var(--main-font), sans-serif;  
@@ -51,7 +51,7 @@ body {
     font-family: var(--secondary-font), sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: calc(31/26);
+    line-height: calc(31 / 26);
     letter-spacing: 0.03em;
     color: var(--t-logo-black-color);
 }
@@ -63,7 +63,7 @@ body {
 }
 .nav-link {
     font-weight: 500;
-    line-height: calc(16/14);
+    line-height: calc(16 / 14);
     letter-spacing: 0.02em;
 }
 .nav-link:hover, 
@@ -90,7 +90,7 @@ body {
 .hero-title {
     font-weight: 900;
     font-size: 44px;
-    line-height: calc(60/44);
+    line-height: calc(60 / 44);
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -98,9 +98,10 @@ body {
 }
 
 .hero-button {
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
-    line-height: calc(30/16);
+    line-height: calc(30 / 16);
     display: flex;
     align-items: center;
     text-align: center;
@@ -112,7 +113,7 @@ body {
  /* Features-About */
 .about-subtitle {
     font-size: 14px;
-    line-height: calc(16/14);
+    line-height: calc(16 / 14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
@@ -125,20 +126,23 @@ body {
  /* Works and Team */
 .work-title, .team-title {
     font-size: 36px;
-    line-height: calc(42/36);
+    line-height: calc(42 / 36);
     text-align: center;
     letter-spacing: 0.03em;   
+}
+.team {
+    background: var(--bgd-cinereous-color);
 }
 .team-subtitle {
     font-weight: 500;
     font-size: 16px;
-    line-height: calc(19/16);
+    line-height: calc(19 / 16);
     text-align: center;
     letter-spacing: 0.03em;
 }
 .team-text {
     font-size: 16px;
-    line-height: calc(19/16);
+    line-height: calc(19 / 16);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--t-secondary-color);
@@ -146,29 +150,36 @@ body {
 
 /* PORTFOLIO */
 .pf-button {
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
-    line-height: calc(26/16);
+    line-height: calc(26 / 16);
     text-align: center;
     letter-spacing: 0.03em;
     color: inherit;
+    background-color: var(--bgd-cinereous-color) ;
     cursor: pointer;
+    border: none;
+    border-radius: 4px;
 }
 .pf-button:hover, 
 .pf-button:focus {
     color: var(--t-light-color);
     background-color: var(--t-accent-color);
 }
+.pf-item {
+    background-color: var(--bgd-light-color);
 
-.pf-title{
+}
+.pf-title {
     font-size: 18px;
-    line-height: calc(36/18);
+    line-height: calc(36 / 18);
     letter-spacing: 0.06em;
 }
 
 .pf-text {
     font-size: 16px;
-    line-height:calc(30/16);
+    line-height:calc(30 / 16);
     letter-spacing: 0.03em;
     color: var(--t-secondary-color);
 }
@@ -182,7 +193,7 @@ body {
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
-    line-height: calc(31/26);
+    line-height: calc(31 / 26);
     letter-spacing: 0.03em;
     color: var(--t-light-color);
  }
@@ -202,7 +213,7 @@ body {
     color: var(--t-accent-color);
 }
 .footer-link {
-    line-height: calc(24/14);
+    line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: var(--t-gray-color);
 }

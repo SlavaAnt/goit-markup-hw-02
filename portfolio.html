@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="X-UA-Compatible">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,59 +44,73 @@
 
     <!--Main-->
     <main>
-        <h1 class="pf-suptitle" hidden>Портфоліо</h1>
-        <button class="pf-button" type="button">Усі</button>
-        <button class="pf-button" type="button">Веб-сайти</button>
-        <button class="pf-button" type="button">Додатки</button>
-        <button class="pf-button" type="button">Дизайн</button>
-        <button class="pf-button" type="button">Маркетинг</button>
-        <ul class="pf-list list">
-            <li class="pf-item">
-                <img class="pf-img" src="./images/portfolio/portfolio-1.1.jpg" alt="laptop-photos" width="370" height="294">
-                <h2 class="pf-title">Технокряк</h2>
-                <p class="pf-text">Веб-сайт</p>
-            </li>
-            <li class="pf-item">
-                <img class="pf-img" src="./images/portfolio/portfolio-2.1.jpg" alt="basketball-players-with-a-ball" width="370" height="294">
-                <h2 class="pf-title">Постер New Orlean vs Golden Star</h2>
-                <p class="pf-text">Дизайн</p>
-            </li>
-            <li class="pf-item">
-                <img class="pf-img" src="./images/portfolio/portfolio-3.1.jpg" alt="fish-with-the-name's-restaurant" width="370" height="294">
-                <h2 class="pf-title">Ресторан Seafood</h2>
-                <p class="pf-text">Додаток</p>
-            </li>
-            <li class="pf-item">
-                <img class="pf-img" src="./images/portfolio/portfolio-4.1.jpg" alt="a-black-headphone" width="370" height="294">
-                <h2 class="pf-title">Проєкт Prime</h2>
-                <p class="pf-text">Маркетинг</p>
-            </li>
-            <li class="pf-item">
-                <img class="pf-img" src="./images/portfolio/portfolio-5.1.jpg" alt="two-boxes" width="370" height="294">
-                <h2 class="pf-title">Проєкт Boxes</h2>
-                <p class="pf-text">Додаток</p>
-            </li>
-            <li class="pf-item">
-                <img class="pf-img" src="./images/portfolio/portfolio-6.1.jpg" alt="monitor" width="370" height="294">
-                <h2 class="pf-title">Inspiration has no Borders</h2>
-                <p class="pf-text">Веб-сайт</p>
-            </li>
-            <li class="pf-item">
-                <img class="pf-img" src="./images/portfolio/portfolio-7.1.jpg" alt="open-book" width="370" height="294">
-                <h2 class="pf-title">Видання Limited Edition</h2>
-                <p class="pf-text">Дизайн</p>
-            </li>
-            <li class="pf-item">
-                <img class="pf-img" src="./images/portfolio/portfolio-8.1.jpg" alt="label" width="370" height="294">
-                <h2 class="pf-title">Проєкт LAB</h2>
-                <p class="pf-text">Маркетинг</p>
-            </li>
-            <li class="pf-item">
-                <img class="pf-img" src="./images/portfolio/portfolio-9.1.jpg" alt="laptop-with-hands" width="370" height="294">
-                <h2 class="pf-title">Growing Business</h2>
-                <p class="pf-filters-button">Додаток</p>
-            </li>
-        </ul>
+        <section class="pf">
+            <h1 class="pf-hidden-title" hidden>Портфоліо</h1>
+            <ul class="pf-list-filters list">
+                <li class="pf-item">                    
+                    <button class="pf-button" type="button">Усі</button>
+                </li>
+                <li class="pf-item">
+                    <button class="pf-button" type="button">Веб-сайти</button>
+                </li>
+                <li class="pf-item">
+                    <button class="pf-button" type="button">Додатки</button>
+                </li>
+                <li class="pf-item">
+                    <button class="pf-button" type="button">Дизайн</button>
+                </li>
+                <li class="pf-item">
+                    <button class="pf-button" type="button">Маркетинг</button>
+                </li>
+            </ul>
+            <ul class="pf-list list">
+                <li class="pf-item">
+                    <img class="pf-img" src="./images/portfolio/portfolio-1.1.jpg" alt="laptop-photos" width="370" height="294">
+                    <h2 class="pf-title">Технокряк</h2>
+                    <p class="pf-text">Веб-сайт</p>
+                </li>
+                <li class="pf-item">
+                    <img class="pf-img" src="./images/portfolio/portfolio-2.1.jpg" alt="basketball-players-with-a-ball" width="370" height="294">
+                    <h2 class="pf-title">Постер New Orlean vs Golden Star</h2>
+                    <p class="pf-text">Дизайн</p>
+                </li>
+                <li class="pf-item">
+                    <img class="pf-img" src="./images/portfolio/portfolio-3.1.jpg" alt="fish-with-the-name's-restaurant" width="370" height="294">
+                    <h2 class="pf-title">Ресторан Seafood</h2>
+                    <p class="pf-text">Додаток</p>
+                </li>
+                <li class="pf-item">
+                    <img class="pf-img" src="./images/portfolio/portfolio-4.1.jpg" alt="a-black-headphone" width="370" height="294">
+                    <h2 class="pf-title">Проєкт Prime</h2>
+                    <p class="pf-text">Маркетинг</p>
+                </li>
+                <li class="pf-item">
+                    <img class="pf-img" src="./images/portfolio/portfolio-5.1.jpg" alt="two-boxes" width="370" height="294">
+                    <h2 class="pf-title">Проєкт Boxes</h2>
+                    <p class="pf-text">Додаток</p>
+                </li>
+                <li class="pf-item">
+                    <img class="pf-img" src="./images/portfolio/portfolio-6.1.jpg" alt="monitor" width="370" height="294">
+                    <h2 class="pf-title">Inspiration has no Borders</h2>
+                    <p class="pf-text">Веб-сайт</p>
+                </li>
+                <li class="pf-item">
+                    <img class="pf-img" src="./images/portfolio/portfolio-7.1.jpg" alt="open-book" width="370" height="294">
+                    <h2 class="pf-title">Видання Limited Edition</h2>
+                    <p class="pf-text">Дизайн</p>
+                </li>
+                <li class="pf-item">
+                    <img class="pf-img" src="./images/portfolio/portfolio-8.1.jpg" alt="label" width="370" height="294">
+                    <h2 class="pf-title">Проєкт LAB</h2>
+                    <p class="pf-text">Маркетинг</p>
+                </li>
+                <li class="pf-item">
+                    <img class="pf-img" src="./images/portfolio/portfolio-9.1.jpg" alt="laptop-with-hands" width="370" height="294">
+                    <h2 class="pf-title">Growing Business</h2>
+                    <p class="pf-filters-button">Додаток</p>
+                </li>
+            </ul>
+        </section>
     </main>
 
     <footer class="footer">
