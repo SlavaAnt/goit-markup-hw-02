@@ -1,5 +1,5 @@
 :root{
-/* Fonts */
+/* Font families */
     --main-font: 'Roboto', sans-serif;
     --secondary-font: 'Raleway', sans-serif;
 
@@ -13,27 +13,25 @@
     --t-gray-color: rgba(255, 255, 255, 0.6);
 
 /* Наявні кольори на сторінці "Студіо" */
-    --color: #2F303A;
-    --color: #FFFFFF 60%;
-    --color: #ECECEC;
-    --color: #F5F4FA;
+    /*--color: #2F303A;
+    /*--color: #FFFFFF 60%;
+    /*--color: #ECECEC;
+    /*--color: #F5F4FA;
 
 /* Наявні кольори на сторінці "Портфоліо" */
-    --color: #EEEEEE;
-    --color: #F5F4FA;
-    --color: #FFFFFF 60%;
-    --color: #2F303A;
-    --color: #ECECEC;
+    /*--color: #EEEEEE;
+    /*--color: #F5F4FA;
+    /*--color: #FFFFFF 60%;
+    /*--color: #2F303A;
+    /*--color: #ECECEC;
 
 /* Background colors*/
     --bgd-primary-color: #F5F5F5;
-    --bgd-secondary-color:#2F303A;
-
-/* Others */
+    --bgd-secondary-color: #2F303A;
 }
 
 body {
-    font-family: var(--main-font);  
+    font-family: var(--main-font), sans-serif;  
     font-size: 14px;
     color: var(--t-primary-color);
     background-color: var(--bgd-primary-color);
@@ -50,7 +48,7 @@ body {
 
 /* Header */ 
 .header-logo {    
-    font-family: var(--secondary-font);
+    font-family: var(--secondary-font), sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: calc(31/26);
@@ -60,7 +58,9 @@ body {
 .header-logo span {
     color: var(--t-accent-color);
 }
-
+.nav-item-active {
+    color: var(--t-accent-color);
+}
 .nav-link {
     font-weight: 500;
     line-height: calc(16/14);
@@ -106,6 +106,8 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--t-light-color);
+    background-color: var(--t-accent-color);
+    cursor: pointer;
 }
  /* Features-About */
 .about-subtitle {
@@ -142,6 +144,36 @@ body {
     color: var(--t-secondary-color);
 }
 
+/* PORTFOLIO */
+.pf-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26/16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: inherit;
+    cursor: pointer;
+}
+.pf-button:hover, 
+.pf-button:focus {
+    color: var(--t-light-color);
+    background-color: var(--t-accent-color);
+}
+
+.pf-title{
+    font-size: 18px;
+    line-height: calc(36/18);
+    letter-spacing: 0.06em;
+}
+
+.pf-text {
+    font-size: 16px;
+    line-height:calc(30/16);
+    letter-spacing: 0.03em;
+    color: var(--t-secondary-color);
+}
+
+
 /* Footer */
 .footer {
     background: var(--bgd-secondary-color);
@@ -159,26 +191,22 @@ body {
     color: var(--t-accent-color);
 }
 .footer-address {
+    font-style: inherit ;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
-    color: var(--t-light-color);
+    color: var(--t-light-color);  
 }
 
+.footer-address:hover, 
+.footer-address:focus {
+    color: var(--t-accent-color);
+}
 .footer-link {
     line-height: calc(24/14);
     letter-spacing: 0.03em;
     color: var(--t-gray-color);
 }
----------------
-/* PORTFOLIO */
----------------
-
-font-weight: 500;
-font-size: 16px;
-line-height: 26px;
-/* identical to box height, or 162% */
-
-text-align: center;
-letter-spacing: 0.03em;
-
-color: #212121;
+.footer-link:hover, 
+.footer-link:focus {
+    color: var(--t-accent-color);
+}
